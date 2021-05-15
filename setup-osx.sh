@@ -17,7 +17,10 @@ brew install powerlevel9k
 # Install fonts
 cd ~/Documents/GitHub
 git clone https://github.com/powerline/fonts.git --depth=1
-# install
 cd fonts
 ./install.sh
+# Install menu bar stats
+brew install --cask stats
+# ZSH syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 source ~/.zshrc
